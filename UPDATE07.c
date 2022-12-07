@@ -916,7 +916,7 @@ void growthRate(void)
             printf("\t\t                 A = %.0f therefore, the City population would be about            \n", ans);
             printf("\t\t                                 %.0f after %.1f Years.                           \n", ans, t);
             printf("\t\t =======================================================================================\n");
-            printf("\t\t                                 © Group #2   2022-2022                                 \n");
+            printf("\t\t                                 Â© Group #2   2022-2022                                 \n");
             printf("\t\t                                  Colegio De Montalban                              \n\n\n");
             }
 
@@ -942,7 +942,7 @@ void growthRate(void)
             printf("\t\t                P = %.0f therefore, the initial number of Population would be     \n", ans);
             printf("\t\t                                   %.0f in %.1f Years.                         \n", ans, t);
             printf("\t\t=======================================================================================\n");
-            printf("\t\t                                © Group #2   2022-2022                                 \n");
+            printf("\t\t                                Â© Group #2   2022-2022                                 \n");
             printf("\t\t                                 Colegio De Montalban                              \n\n\n");
         }
 
@@ -968,7 +968,7 @@ void growthRate(void)
             printf("\t\t                 r = %.3f therefore, the rate of growth of the Population would be \n", ans);
             printf("\t\t                                        %.3f in the %.1f Years.                 \n", ans, t);
             printf("\t\t =======================================================================================\n");
-            printf("\t\t                                 © Group #2   2022-2022                                 \n");
+            printf("\t\t                                 Â© Group #2   2022-2022                                 \n");
             printf("\t\t                                  Colegio De Montalban                              \n\n\n");
         }
 
@@ -994,7 +994,7 @@ void growthRate(void)
             printf("\t\t                 t = %.0f therefore, in the %.1f Years the size of Population was %g \n", ans, ans, A);
             printf("\t\t                                                                                        \n");
             printf("\t\t =======================================================================================\n");
-            printf("\t\t                                 © Group #2   2022-2022                                 \n");
+            printf("\t\t                                 Â© Group #2   2022-2022                                 \n");
             printf("\t\t                                  Colegio De Montalban                              \n\n\n");
         }
     }
@@ -1014,7 +1014,7 @@ void growthRate(void)
         printf("\t\t                                                                                        \n");
         printf("\t\t                                                                                        \n");
         printf("\t\t =======================================================================================\n");
-        printf("\t\t                                 © Group #2   2022-2022                                 \n");
+        printf("\t\t                                 Â© Group #2   2022-2022                                 \n");
         printf("\t\t                                  Colegio De Montalban                             \n\n\n");
 
     }

@@ -42,17 +42,18 @@ void tempConvert(void);
 void celCon(void);
 void fahCon(void);
 
-void greet(void);
-void invalid(void);
-
 //This is For Integers Identifier
 void intId(void);
 void posNeg(void);
 void intCom(void);
 
+//This is For the last frame in our program either GREET or if it INVALID
+void greet(void);
+void invalid(void);
+
 //global Variable
 char slt;
-int opt, a,b;
+int opt;
 float ans, A, P, r, t, e = 2.718;
 
 
@@ -87,18 +88,18 @@ void banner(void)
     {
     case 'Y':
     case 'y' :
-        system("clear");
+        system("cls");
         mainMenu();
         break;
 
     case 'N':
     case 'n':
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -127,56 +128,56 @@ void mainMenu(void)
     switch(opt)
     {
     case 1:
-        system("clear");
+        system("cls");
         registList();
         break;
 
     case 2:
-        system("clear");
+        system("cls");
         simpleCal();
         break;
 
     case 3:
-        system("clear");
+        system("cls");
         tempConvert();
         break;
 
     case 4:
-        system("clear");
-        printf("UNDER PROCESS! \n");
+        system("cls");
+        intId();
         break;
 
     case 5:
-        system("clear");
+        system("cls");
         printf("UNDER PROCESS! \n");
         //qualiVote();
         break;
 
     case 6:
-        system("clear");
+        system("cls");
         printf("UNDER PROCESS! \n");
         //colorSelec();
         break;
 
     case 7:
-        system("clear");
+        system("cls");
         printf("UNDER PROCESS! \n");
         //gradeRange();
         break;
 
     case 8:
-        system("clear");
+        system("cls");
         printf("UNDER PROCESS! \n");
         //integer();
         break;
 
     case 9:
-        system("clear");
+        system("cls");
         banner();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
 
@@ -200,22 +201,22 @@ void registList(void)
     switch(opt)
     {
     case 1:
-        system("clear");
+        system("cls");
         regisForm();
         break;
 
     case 2:
-        system("clear");
+        system("cls");
         listRegistered();
         break;
 
     case 3:
-        system("clear");
+        system("cls");
         mainMenu();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -278,7 +279,7 @@ void regisForm(void)
     printf("\t\t\t What is your Third Choice? ");
     scanf(" %[^\n]s", thirdChoice);
 
-    system("clear");
+    system("cls");
 
     printf("\n\n\n\t\t ==============================+============================== \n");
     printf("\t\t                        REGISTRATION FORM                       \n");
@@ -313,17 +314,17 @@ void regisForm(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         registList();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -480,17 +481,17 @@ void listRegistered(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         registList();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -516,37 +517,37 @@ void simpleCal(void)
     switch(opt)
     {
     case 1:
-        system("clear");
+        system("cls");
         basicComp();
         break;
 
     case 2:
-        system("clear");
+        system("cls");
         areaOFShape();
         break;
 
     case 3:
-        system("clear");
+        system("cls");
         gradeCal();
         break;
 
     case 4:
-        system("clear");
+        system("cls");
         growthRate();
         break;
 
     case 5:
-        system("clear");
+        system("cls");
         bitwise();
         break;
 
     case 6:
-        system("clear");
+        system("cls");
         mainMenu();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -570,7 +571,7 @@ void basicComp(void)
     printf("\t\t Third number  : ");
     scanf("%f", &num3);
 
-    system("clear");
+    system("cls");
 
     add = num1 + num2 + num3;
     sub = num3 - num2;
@@ -593,17 +594,17 @@ void basicComp(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         simpleCal();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -628,32 +629,32 @@ void areaOFShape(void)
     switch(opt)
     {
     case 1:
-        system("clear");
+        system("cls");
         areaTri();
         break;
 
     case 2:
-        system("clear");
+        system("cls");
         areaTrape();
         break;
 
     case 3:
-        system("clear");
+        system("cls");
         areaSqr();
         break;
 
     case 4:
-        system("clear");
+        system("cls");
         areaPar();
         break;
 
     case 5:
-        system("clear");
+        system("cls");
         mainMenu();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -674,7 +675,7 @@ void areaTri(void)
     printf("\t\t Enter the Height of Triangle : ");
     scanf("%f", &h);
 
-    system("clear");
+    system("cls");
 
     area = (b*h)/2;
 
@@ -699,17 +700,17 @@ void areaTri(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         areaOFShape();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -726,7 +727,7 @@ void areaSqr(void)
     printf("\t\t Enter sides of square: ");
     scanf("%f", &side);
 
-    system("clear");
+    system("cls");
 
     area = side * side;
 
@@ -750,17 +751,17 @@ void areaSqr(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         areaOFShape();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -782,7 +783,7 @@ void areaTrape(void)
     printf("\t\t Enter the height of Trapezoid : ");
     scanf("%f", &h);
 
-    system("clear");
+    system("cls");
 
     area = 0.5 * (a + b) * h;
 
@@ -808,17 +809,17 @@ void areaTrape(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         areaOFShape();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -839,7 +840,7 @@ void areaPar(void)
 
     area = b * h;
 
-    system("clear");
+    system("cls");
 
     printf("\n\n\n\t\t ==============================+==============================\n");
     printf("\t\t                        AREA OF PARALLELOGRAM                     \n");
@@ -861,17 +862,17 @@ void areaPar(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         areaOFShape();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -896,32 +897,32 @@ void gradeCal(void)
     switch(opt)
     {
     case 1:
-        system("clear");
+        system("cls");
         gradeRange();
         break;
 
     case 2:
-        system("clear");
+        system("cls");
         //passIdent();
         break;
 
     case 3:
-        system("clear");
+        system("cls");
         //gradeComp1();
         break;
 
     case 4:
-        system("clear");
+        system("cls");
         //gradeComp2();
         break;
 
     case 5:
-        system("clear");
+        system("cls");
         mainMenu();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -971,17 +972,17 @@ void gradeRange(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         gradeCal();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1006,32 +1007,32 @@ void growthRate(void)
     switch(opt)
     {
     case 1:
-        system("clear");
+        system("cls");
         sizePopulation();
         break;
 
     case 2:
-        system("clear");
+        system("cls");
         numPeople();
         break;
 
     case 3:
-        system("clear");
+        system("cls");
         rateOfGrowth();
         break;
 
     case 4:
-        system("clear");
+        system("cls");
         timeRate();
         break;
 
     case 5:
-        system("clear");
+        system("cls");
         mainMenu();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1049,7 +1050,7 @@ void sizePopulation(void)
     printf("\t\t Enter the Time in Month : ");
     scanf("%f", &t);
 
-    system("clear");
+    system("cls");
 
     ans = P * pow(e,(r * t));
 
@@ -1073,17 +1074,17 @@ void sizePopulation(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         growthRate();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1101,7 +1102,7 @@ void numPeople(void)
     printf("\t\t Enter the Time in Month : ");
     scanf("%f", &t);
 
-    system("clear");
+    system("cls");
 
     ans = A / pow(e,(r * t));
 
@@ -1124,17 +1125,17 @@ void numPeople(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         growthRate();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1151,7 +1152,7 @@ void rateOfGrowth(void)
     printf("\t\t Enter the Time in Month : ");
     scanf("%f", &t);
 
-    system("clear");
+    system("cls");
 
     ans = log10(A / P) / ( t * log10(e));
 
@@ -1174,17 +1175,17 @@ void rateOfGrowth(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         growthRate();
         break;
 
     case 1:
-        system("clearr");
+        system("clsr");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1201,7 +1202,7 @@ void timeRate(void)
     printf("\t\t Enter the Rate of Growth : ");
     scanf("%f", &r);
 
-    system("clear");
+    system("cls");
 
     ans = log10(A / P) / (r * log10(e));
 
@@ -1224,17 +1225,17 @@ void timeRate(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         growthRate();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1271,17 +1272,17 @@ void bitwise(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         bitwise();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1304,22 +1305,22 @@ void tempConvert(void)
     switch(opt)
     {
     case 1:
-        system("clear");
+        system("cls");
         celCon();
         break;
 
     case 2:
-        system("clear");
+        system("cls");
         fahCon();
         break;
 
     case 3:
-        system("clear");
+        system("cls");
         mainMenu();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1364,17 +1365,17 @@ void celCon(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         tempConvert();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1419,17 +1420,17 @@ void fahCon(void)
     switch(opt)
     {
     case 0:
-        system("clear");
+        system("cls");
         tempConvert();
         break;
 
     case 1:
-        system("clear");
+        system("cls");
         greet();
         break;
 
     default:
-        system("clear");
+        system("cls");
         invalid();
         break;
     }
@@ -1464,18 +1465,19 @@ void fahCon(void)
 
     case 3:
         system("cls");
-        //mainMenu();
+        mainMenu();
         break;
 
     default:
-        system("clear");
-        //invalid();
+        system("cls");
+        invalid();
         break;
     }
 }
 
 //posNeg
 void posNeg(void){
+    int a;
     printf("\n\t\t+---------------+---------------+ \n");
     printf("\t\t|     Positive and Negative     |");
     printf("\n\t\t+---------------+---------------+ \n\n");
@@ -1483,12 +1485,12 @@ void posNeg(void){
     scanf("%i", &a);
 
     if(a == 0){
-        printf("\n\t\t<----------|---------->\n",a);
-        printf("\t\t           0", a);
+        printf("\n\t\t<----------|---------->\n");
+        printf("\t\t           0");
         printf("\n\n\t\tThe %i is Positive Number. \n", a);
     }
     else if(a >= 1){
-        printf("\n\t\t|----------|---------->\n",a);
+        printf("\n\t\t|----------|---------->\n");
         printf("\t\t           %i", a);
         printf("\n\n\t\tThe %i is Positive Number. \n", a);
     }
@@ -1498,12 +1500,13 @@ void posNeg(void){
         printf("\n\n\t\tThe %i is Negative Number. \n", a);
     }
 
-    printf("\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\n\t\t BACK press [0]               EXIT press [1] : ");
+    scanf("%i", &opt);
     switch(opt)
     {
     case 0:
         system("cls");
-        registList();
+        posNeg();
         break;
 
     case 1:
@@ -1520,6 +1523,7 @@ void posNeg(void){
 
 //intCom
 void intCom(void){
+    int b, a;
     printf("\n\t\t+----------------+----------------+ \n");
     printf("\t\t|       Integers Comparison       |");
     printf("\n\t\t+----------------+----------------+ \n\n");
@@ -1530,22 +1534,24 @@ void intCom(void){
 
     printf("\t\t===================================\n\n");
 
-    if(a>b){
-        printf("\t\tThe Highest Value is A with %i \n", a);
+    if(a > b){
+        printf("\t\tThe Highest Value is A with value of %i \n", a);
     }
-    else if(a<b){
-        printf("\t\tThe Highest Value is B with %i \n", b);
+    else if(a < b){
+        printf("\t\tThe Highest Value is B with value of %i \n", b);
     }
-    else if(a==b){
-        printf("\t\tThe Value of A and B is the same, and the value of it is \"%i\"\n", a,b);
+    else if(a == b){
+        printf("\t\tThe Value of A and B is the same, and the value of it is \"%i\"\n", a);
     }
 
-    printf("\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\n\t\t BACK press [0]               EXIT press [1] : ");
+    scanf("%i", &opt);
+
     switch(opt)
     {
     case 0:
         system("cls");
-        registList();
+        intCom();
         break;
 
     case 1:

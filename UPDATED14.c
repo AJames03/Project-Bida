@@ -1,4 +1,4 @@
-    /*  Final Project #2
+/*  Final Project #2
     Members:
         Arce, Jhon Brian V.
         Betinol, Aron James
@@ -9,7 +9,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include <conio.h>
 #include <math.h>
 
 void banner(void);
@@ -43,6 +42,12 @@ void tempConvert(void);
 void celCon(void);
 void fahCon(void);
 
+//This is For Integers Identifier
+void intId(void);
+void posNeg(void);
+void intCom(void);
+
+//This is For the last frame in our program either GREET or if it INVALID
 void greet(void);
 void invalid(void);
 
@@ -139,7 +144,7 @@ void mainMenu(void)
 
     case 4:
         system("cls");
-        printf("UNDER PROCESS! \n");
+        intId();
         break;
 
     case 5:
@@ -182,15 +187,15 @@ void mainMenu(void)
 //This is for Registration or case 1
 void registList(void)
 {
-    printf("\n\n\n\n\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                       REGISTRATION LIST                        \n");
-    printf("\t\t\t ==============================+==============================\n\n");
-    printf("\t\t\t\t [1] - Registration Form                                    \n\n");
-    printf("\t\t\t\t [2] - List of Registered                                   \n\n");
-    printf("\t\t\t\t [3] - Back                                                 \n\n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                       REGISTRATION LIST                        \n");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t\t [1] - Registration Form                                    \n\n");
+    printf("\t\t\t [2] - List of Registered                                   \n\n");
+    printf("\t\t\t [3] - Back                                                 \n\n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t Pick a Number : ");
+    printf("\t\t Pick a Number : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -214,9 +219,7 @@ void registList(void)
         system("cls");
         invalid();
         break;
-
     }
-
 }
 
 //Prelim Act2
@@ -227,60 +230,60 @@ void regisForm(void)
     char educPri[50], educSec[50], educTer[50], firstChoice[50], secondChoice[50], thirdChoice[50];
     int age;
 
-    printf("\n\n\n\t\t\t ==============================+============================== \n");
-    printf("\t\t\t                         PERSONAL BACKGROUND                         \n");
-    printf("\t\t\t ==============================+==============================       \n");
+    printf("\n\n\n\t\t ==============================+============================== \n");
+    printf("\t\t                         PERSONAL BACKGROUND                         \n");
+    printf("\t\t ==============================+==============================       \n");
 
-    printf("\t\t\t\t What is your Name? ");
-    scanf(" %50[^\n]", &name);
+    printf("\t\t\t What is your Name? ");
+    scanf(" %[^\n]s", name);
 
-    printf("\t\t\t\t How old Are you? ");
+    printf("\t\t\t How old Are you? ");
     scanf("%i", &age);
 
-    printf("\t\t\t\t What is your Birthday? ");
-    scanf(" %50[^\n]", &birthday);
+    printf("\t\t\t What is your Birthday? ");
+    scanf(" %[^\n]s", birthday);
 
-    printf("\t\t\t\t Where are you from? ");
-    scanf(" %50[^\n]", &add);
+    printf("\t\t\t Where are you from? ");
+    scanf(" %[^\n]s", add);
 
-    printf("\t\t\t\t What is your Contact Number? ");
-    scanf("%s", &contactNum);
+    printf("\t\t\t What is your Contact Number? ");
+    scanf("%s", contactNum);
 
-    printf("\t\t\t\t What is your Email Address? ");
-    scanf("%s", &emailAdd);
+    printf("\t\t\t What is your Email Address? ");
+    scanf("%s", emailAdd);
 
-    printf("\t\t\t\t What is your Citizenship? ");
-    scanf("%s", &citizen);
+    printf("\t\t\t What is your Citizenship? ");
+    scanf("%s", citizen);
 
-    printf("\t\t\t\t Name of your Father? ");
-    scanf(" %50[^\n]", &fatherName);
+    printf("\t\t\t Name of your Father? ");
+    scanf(" %[^\n]s", fatherName);
 
-    printf("\t\t\t\t Name of your Mother? ");
-    scanf(" %50[^\n]", &motherName);
+    printf("\t\t\t Name of your Mother? ");
+    scanf(" %[^\n]s", motherName);
 
-    printf("\t\t\t\t Primary Education: ");
-    scanf(" %50[^\n]", &educPri);
+    printf("\t\t\t Primary Education: ");
+    scanf(" %[^\n]s", educPri);
 
-    printf("\t\t\t\t Secondary Education: ");
-    scanf(" %50[^\n]", &educSec);
+    printf("\t\t\t Secondary Education: ");
+    scanf(" %[^\n]s", educSec);
 
-    printf("\t\t\t\t Teriary Education: ");
-    scanf(" %50[^\n]", &educTer);
+    printf("\t\t\t Teriary Education: ");
+    scanf(" %[^\n]s", educTer);
 
-    printf("\t\t\t\t What is your First Choice? ");
-    scanf(" %50[^\n]", &firstChoice);
+    printf("\t\t\t What is your First Choice? ");
+    scanf(" %[^\n]s", firstChoice);
 
-    printf("\t\t\t\t What is your Second Choice? ");
-    scanf(" %50[^\n]", &secondChoice);
+    printf("\t\t\t What is your Second Choice? ");
+    scanf(" %[^\n]s", secondChoice);
 
-    printf("\t\t\t\t What is your Third Choice? ");
-    scanf(" %50[^\n]", &thirdChoice);
+    printf("\t\t\t What is your Third Choice? ");
+    scanf(" %[^\n]s", thirdChoice);
 
     system("cls");
 
-    printf("\n\n\t\t\t ==============================+============================== \n");
-    printf("\t\t\t                         REGISTRATION FORM                         \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\n\n\n\t\t ==============================+============================== \n");
+    printf("\t\t                        REGISTRATION FORM                       \n");
+    printf("\t\t ==============================+==============================\n\n");
 
     printf("\t\t\t NAME...............: %s\n", name);
     printf("\t\t\t AGE................: %i\n", age);
@@ -292,9 +295,9 @@ void regisForm(void)
     printf("\t\t\t FATHER'S NAME......: %s\n", fatherName);
     printf("\t\t\t MOTHER'S NAME......: %s\n", motherName);
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
+    printf("\t\t ==============================+==============================\n\n");
 
     printf("\t\t\t PRIMARY..........: %s\n", educPri);
     printf("\t\t\t SECONDARY........: %s\n", educSec);
@@ -304,7 +307,8 @@ void regisForm(void)
     printf("\t\t\t 2ND CHOICE.......: %s\n", secondChoice);
     printf("\t\t\t 3RD CHOICE.......: %s\n\n", thirdChoice);
 
-    printf("\t\t\t\t BACK press [0]           EXIT press [1] : ");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t          BACK press [0]           EXIT press [1] : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -329,149 +333,149 @@ void regisForm(void)
 //Prelim Act1
 void listRegistered(void)
 {
-    printf("\n\n\t\t\t                List of Registered People                 \n\n");
+    printf("\n\n\n\t\t                List of Registered People                 \n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                        REGISTRATION FORM                       \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                        REGISTRATION FORM                       \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t NAME...............: ARCE, JHON BRIAN V.            \n");
-    printf("\t\t\t\t AGE................: 19 YEARS OLD                   \n");
-    printf("\t\t\t\t BIRTHDAY...........: APRIL 02, 2003                 \n");
-    printf("\t\t\t\t ADDRESS............: SAN ISIDRO                     \n");
-    printf("\t\t\t\t CONTACT NO.........: 09951779567                    \n");
-    printf("\t\t\t\t EMAIL ADDRESS......: arce.jhonbrian@gmail.com       \n");
-    printf("\t\t\t\t CITIZENSHIP........: FILIPINO                       \n");
-    printf("\t\t\t\t FATHER'S NAME......: ARCE, REGAN                    \n");
-    printf("\t\t\t\t MOTHER'S NAME......: ARCE, LIEZEL                 \n\n");
+    printf("\t\t\t NAME...............: ARCE, JHON BRIAN V.            \n");
+    printf("\t\t\t AGE................: 19 YEARS OLD                   \n");
+    printf("\t\t\t BIRTHDAY...........: APRIL 02, 2003                 \n");
+    printf("\t\t\t ADDRESS............: SAN ISIDRO                     \n");
+    printf("\t\t\t CONTACT NO.........: 09951779567                    \n");
+    printf("\t\t\t EMAIL ADDRESS......: arce.jhonbrian@gmail.com       \n");
+    printf("\t\t\t CITIZENSHIP........: FILIPINO                       \n");
+    printf("\t\t\t FATHER'S NAME......: ARCE, REGAN                    \n");
+    printf("\t\t\t MOTHER'S NAME......: ARCE, LIEZEL                 \n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t PRIMARY............: SNES                           \n");
-    printf("\t\t\t\t SECONDARY..........: OMNHS                          \n");
-    printf("\t\t\t\t TERTIARY...........: CDM                          \n\n");
+    printf("\t\t\t PRIMARY............: SNES                           \n");
+    printf("\t\t\t SECONDARY..........: OMNHS                          \n");
+    printf("\t\t\t TERTIARY...........: CDM                          \n\n");
 
-    printf("\t\t\t\t 1ST CHOICE.........: BSED                           \n");
-    printf("\t\t\t\t 2ND CHOICE.........: BSCS                           \n");
-    printf("\t\t\t\t 3RD CHOICE.........: BSIT                         \n\n");
+    printf("\t\t\t 1ST CHOICE.........: BSED                           \n");
+    printf("\t\t\t 2ND CHOICE.........: BSCS                           \n");
+    printf("\t\t\t 3RD CHOICE.........: BSIT                         \n\n");
 
-    printf("\t\t\t -------------------------------------------------------------\n\n");
+    printf("\t -----------------------------------------------------------------------------\n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                        REGISTRATION FORM                       \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                        REGISTRATION FORM                       \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t NAME...............: BETINOL, ARON JAMES L.         \n");
-    printf("\t\t\t\t AGE................: 18 YEARS OLD                   \n");
-    printf("\t\t\t\t BIRTHDAY...........: MARCH 03, 2004                 \n");
-    printf("\t\t\t\t ADDRESS............: SAN JOSE                       \n");
-    printf("\t\t\t\t CONTACT NO.........: 09652635576                    \n");
-    printf("\t\t\t\t EMAIL ADDRESS......: betinolaronjames529@gmail.com  \n");
-    printf("\t\t\t\t CITIZENSHIP........: FILIPINO                       \n");
-    printf("\t\t\t\t FATHER'S NAME......: BETINOL, PATERNO               \n");
-    printf("\t\t\t\t MOTHER'S NAME......: BETINOL, CIRILA              \n\n");
+    printf("\t\t\t NAME...............: BETINOL, ARON JAMES L.         \n");
+    printf("\t\t\t AGE................: 18 YEARS OLD                   \n");
+    printf("\t\t\t BIRTHDAY...........: MARCH 03, 2004                 \n");
+    printf("\t\t\t ADDRESS............: SAN JOSE                       \n");
+    printf("\t\t\t CONTACT NO.........: 09652635576                    \n");
+    printf("\t\t\t EMAIL ADDRESS......: betinolaronjames529@gmail.com  \n");
+    printf("\t\t\t CITIZENSHIP........: FILIPINO                       \n");
+    printf("\t\t\t FATHER'S NAME......: BETINOL, PATERNO               \n");
+    printf("\t\t\t MOTHER'S NAME......: BETINOL, CIRILA              \n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t PRIMARY........: KVES                           \n");
-    printf("\t\t\t\t SECONDARY......: KVNHS                          \n");
-    printf("\t\t\t\t TERTIARY.......: AICS                         \n\n");
+    printf("\t\t\t PRIMARY........: KVES                           \n");
+    printf("\t\t\t SECONDARY......: KVNHS                          \n");
+    printf("\t\t\t TERTIARY.......: AICS                         \n\n");
 
-    printf("\t\t\t\t 1ST CHOICE.....: BSIT                           \n");
-    printf("\t\t\t\t 2ND CHOICE.....: BSCS                           \n");
-    printf("\t\t\t\t 3RD CHOICE.....: BScPE                        \n\n");
+    printf("\t\t\t 1ST CHOICE.....: BSIT                           \n");
+    printf("\t\t\t 2ND CHOICE.....: BSCS                           \n");
+    printf("\t\t\t 3RD CHOICE.....: BScPE                        \n\n");
 
-    printf("\t\t\t -------------------------------------------------------------\n\n");
+    printf("\t ------------------------------------------------------------------------------\n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                        REGISTRATION FORM                       \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                        REGISTRATION FORM                       \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t NAME...............: MEREDORES, JOSHUA U.           \n");
-    printf("\t\t\t\t AGE................: 18 YEARS OLD                   \n");
-    printf("\t\t\t\t BIRTHDAY...........: MARCH 03, 2004                 \n");
-    printf("\t\t\t\t ADDRESS............: SOUTHVILLE 8B ROD              \n");
-    printf("\t\t\t\t CONTACT NO.........: 09093575240                    \n");
-    printf("\t\t\t\t EMAIL ADDRESS......: joshuameredores@gmail.com      \n");
-    printf("\t\t\t\t CITIZENSHIP........: FILIPINO                       \n");
-    printf("\t\t\t\t FATHER'S NAME......: MEREDORES, BONIFACIO           \n");
-    printf("\t\t\t\t MOTHER'S NAME......: MEREDORES, MARIBETH          \n\n");
+    printf("\t\t\t NAME...............: MEREDORES, JOSHUA U.           \n");
+    printf("\t\t\t AGE................: 18 YEARS OLD                   \n");
+    printf("\t\t\t BIRTHDAY...........: MARCH 03, 2004                 \n");
+    printf("\t\t\t ADDRESS............: SOUTHVILLE 8B ROD              \n");
+    printf("\t\t\t CONTACT NO.........: 09093575240                    \n");
+    printf("\t\t\t EMAIL ADDRESS......: joshuameredores@gmail.com      \n");
+    printf("\t\t\t CITIZENSHIP........: FILIPINO                       \n");
+    printf("\t\t\t FATHER'S NAME......: MEREDORES, BONIFACIO           \n");
+    printf("\t\t\t MOTHER'S NAME......: MEREDORES, MARIBETH          \n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t PRIMARY............: SILES                          \n");
-    printf("\t\t\t\t SECONDARY..........: SNHS                           \n");
-    printf("\t\t\t\t TERTIARY...........: AICS                         \n\n");
+    printf("\t\t\t PRIMARY............: SILES                          \n");
+    printf("\t\t\t SECONDARY..........: SNHS                           \n");
+    printf("\t\t\t TERTIARY...........: AICS                         \n\n");
 
-    printf("\t\t\t\t 1ST CHOICE.........: BScPE                          \n");
-    printf("\t\t\t\t 2ND CHOICE.........: BSHR                           \n");
-    printf("\t\t\t\t 3RD CHOICE.........: BSIT                         \n\n");
+    printf("\t\t\t 1ST CHOICE.........: BScPE                          \n");
+    printf("\t\t\t 2ND CHOICE.........: BSHR                           \n");
+    printf("\t\t\t 3RD CHOICE.........: BSIT                         \n\n");
 
-    printf("\t\t\t -------------------------------------------------------------\n\n");
+    printf("\t ---------------------------------------------------------------------------------\n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                        REGISTRATION FORM                       \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                        REGISTRATION FORM                       \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t NAME...............: CALPO, MAXELL JANE             \n");
-    printf("\t\t\t\t AGE................: 34 YEARS OLD                   \n");
-    printf("\t\t\t\t BIRTHDAY...........: DECEMBER 19, 1987              \n");
-    printf("\t\t\t\t ADDRESS............: QUEZON CITY                    \n");
-    printf("\t\t\t\t CONTACT NO.........: 09293023344                    \n");
-    printf("\t\t\t\t EMAIL ADDRESS......: calpomax@gmail.com             \n");
-    printf("\t\t\t\t CITIZENSHIP........: FILIPINO                       \n");
-    printf("\t\t\t\t FATHER'S NAME......: CALPO, PROCESS                 \n");
-    printf("\t\t\t\t MOTHER'S NAME......: ASIS, ROSEMARIE              \n\n");
+    printf("\t\t\t NAME...............: CALPO, MAXELL JANE             \n");
+    printf("\t\t\t AGE................: 34 YEARS OLD                   \n");
+    printf("\t\t\t BIRTHDAY...........: DECEMBER 19, 1987              \n");
+    printf("\t\t\t ADDRESS............: QUEZON CITY                    \n");
+    printf("\t\t\t CONTACT NO.........: 09293023344                    \n");
+    printf("\t\t\t EMAIL ADDRESS......: calpomax@gmail.com             \n");
+    printf("\t\t\t CITIZENSHIP........: FILIPINO                       \n");
+    printf("\t\t\t FATHER'S NAME......: CALPO, PROCESS                 \n");
+    printf("\t\t\t MOTHER'S NAME......: ASIS, ROSEMARIE              \n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t PRIMARY............: SVES                           \n");
-    printf("\t\t\t\t SECONDARY..........: CHS                            \n");
-    printf("\t\t\t\t TERTIARY...........: PNM                          \n\n");
+    printf("\t\t\t PRIMARY............: SVES                           \n");
+    printf("\t\t\t SECONDARY..........: CHS                            \n");
+    printf("\t\t\t TERTIARY...........: PNM                          \n\n");
 
-    printf("\t\t\t\t 1ST CHOICE.........: BSIT                           \n");
-    printf("\t\t\t\t 2ND CHOICE.........: BSIT                           \n");
-    printf("\t\t\t\t 3RD CHOICE.........: BSIT                         \n\n");
+    printf("\t\t\t 1ST CHOICE.........: BSIT                           \n");
+    printf("\t\t\t 2ND CHOICE.........: BSIT                           \n");
+    printf("\t\t\t 3RD CHOICE.........: BSIT                         \n\n");
 
-    printf("\t\t\t -------------------------------------------------------------\n\n");
+    printf("\t ---------------------------------------------------------------------------------\n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                        REGISTRATION FORM                       \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                        REGISTRATION FORM                       \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t NAME...............: SANTELICES, ALBERT             \n");
-    printf("\t\t\t\t AGE................: 21 YEARS OLD                   \n");
-    printf("\t\t\t\t BIRTHDAY...........: APRIL 03, 2001                 \n");
-    printf("\t\t\t\t ADDRESS............: SAN JOSE                       \n");
-    printf("\t\t\t\t CONTACT NO.........: 09485618348                    \n");
-    printf("\t\t\t\t EMAIL ADDRESS......: santelicesalbert03@gmail.com   \n");
-    printf("\t\t\t\t CITIZENSHIP........: FILIPINO                       \n");
-    printf("\t\t\t\t FATHER'S NAME......: SANTELICES, ARNOLD             \n");
-    printf("\t\t\t\t MOTHER'S NAME......: SANTELICES, MA. LILIBETH     \n\n");
+    printf("\t\t\t NAME...............: SANTELICES, ALBERT             \n");
+    printf("\t\t\t AGE................: 21 YEARS OLD                   \n");
+    printf("\t\t\t BIRTHDAY...........: APRIL 03, 2001                 \n");
+    printf("\t\t\t ADDRESS............: SAN JOSE                       \n");
+    printf("\t\t\t CONTACT NO.........: 09485618348                    \n");
+    printf("\t\t\t EMAIL ADDRESS......: santelicesalbert03@gmail.com   \n");
+    printf("\t\t\t CITIZENSHIP........: FILIPINO                       \n");
+    printf("\t\t\t FATHER'S NAME......: SANTELICES, ARNOLD             \n");
+    printf("\t\t\t MOTHER'S NAME......: SANTELICES, MA. LILIBETH     \n\n");
 
-    printf("\t\t\t ==============================+==============================  \n");
-    printf("\t\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\t\t ==============================+==============================  \n");
+    printf("\t\t                     EDUCATIONAL ATTAINTMENT                    \n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t\t PRIMARY............: KVES                           \n");
-    printf("\t\t\t\t SECONDARY..........: KVNHS                          \n");
-    printf("\t\t\t\t TERTIARY...........: KVSHS                        \n\n");
+    printf("\t\t\t PRIMARY............: KVES                           \n");
+    printf("\t\t\t SECONDARY..........: KVNHS                          \n");
+    printf("\t\t\t TERTIARY...........: KVSHS                        \n\n");
 
-    printf("\t\t\t\t 1ST CHOICE.........: BSIT                           \n");
-    printf("\t\t\t\t 2ND CHOICE.........: BS CRIM                        \n");
-    printf("\t\t\t\t 3RD CHOICE.........: HRM                          \n\n");
+    printf("\t\t\t 1ST CHOICE.........: BSIT                           \n");
+    printf("\t\t\t 2ND CHOICE.........: BS CRIM                        \n");
+    printf("\t\t\t 3RD CHOICE.........: HRM                          \n\n");
 
-    printf("\t\t\t --------------------------------------------------------------\n\n");
-
-    printf("\t\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\t ---------------------------------------------------------------------------------\n\n");
+    printf("\t\t ==============================+==============================\n");
+    printf("\t\t          BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -496,18 +500,18 @@ void listRegistered(void)
 //MENU for Simple Calculator
 void simpleCal(void)
 {
-    printf("\n\n\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                       SIMPLE CALCULATOR                        \n");
-    printf("\t\t\t ==============================+==============================\n\n");
-    printf("\t\t\t\t [1] - Basic  Computation                                    \n\n");
-    printf("\t\t\t\t [2] - Area of Shape                                        \n\n");
-    printf("\t\t\t\t [3] - Grade Calculation                                    \n\n");
-    printf("\t\t\t\t [4] - Population Growth Rate                               \n\n");
-    printf("\t\t\t\t [5] - Bitwise                                              \n\n");
-    printf("\t\t\t\t [6] - Back                                                 \n\n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                       SIMPLE CALCULATOR                        \n");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t\t [1] - Basic  Computation                                    \n\n");
+    printf("\t\t\t [2] - Area of Shape                                        \n\n");
+    printf("\t\t\t [3] - Grade Calculation                                    \n\n");
+    printf("\t\t\t [4] - Population Growth Rate                               \n\n");
+    printf("\t\t\t [5] - Bitwise                                              \n\n");
+    printf("\t\t\t [6] - Back                                                 \n\n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t  Pick a Number : ");
+    printf("\t\t  Pick a Number : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -555,16 +559,16 @@ void basicComp(void)
 
     float add, sub, product, quote, num1, num2, num3, expo;
 
-    printf("+-------------------+ \n");
-    printf("| Basic Computation | \n");
-    printf("+-------------------+ \n\n");
-    printf("First number  : ");
+    printf("\n\n\n\t\t +-------------------+ \n");
+    printf("\t\t | Basic Computation | \n");
+    printf("\t\t +-------------------+ \n\n");
+    printf("\t\t First number  : ");
     scanf("%f", &num1);
 
-    printf("Second number : ");
+    printf("\t\t Second number : ");
     scanf("%f", &num2);
 
-    printf("Third number  : ");
+    printf("\t\t Third number  : ");
     scanf("%f", &num3);
 
     system("cls");
@@ -575,18 +579,17 @@ void basicComp(void)
     quote = num1 / num3;
     expo = pow(num3, num2);
 
-    printf("+-------------------+ \n");
-    printf("| Basic Computation | \n");
-    printf("+-------------------+ \n");
-    printf("\n# %g + %g + %g = %g\n", num1, num2, num3, add);
-    printf("# %g - %g = %g\n", num3, num2, sub);
-    printf("# %g * %g = %g\n", num1, num3, product);
-    printf("# %g / %g = %g\n", num1, num2, quote);
-    printf("# %g ^ %g = %.2Lf\n\n", num3, num2, expo);
+    printf("\n\n\n\t\t +-------------------+ \n");
+    printf("\t\t | Basic Computation | \n");
+    printf("\t\t +-------------------+ \n\n");
+    printf("\t\t # %g + %g + %g = %g\n", num1, num2, num3, add);
+    printf("\t\t # %g - %g = %g\n", num3, num2, sub);
+    printf("\t\t # %g * %g = %g\n", num1, num3, product);
+    printf("\t\t # %g / %g = %g\n", num1, num2, quote);
+    printf("\t\t # %g ^ %g = %g\n\n", num3, num2, expo);
 
-    printf("BACK press [0]               EXIT press [1] : ");
+    printf("\t\t BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
-    //slt = getch();
 
     switch(opt)
     {
@@ -610,17 +613,17 @@ void basicComp(void)
 //MENU for Area of Shape
 void areaOFShape(void)
 {
-    printf("\n\n\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                         AREA OF SHAPE                         \n");
-    printf("\t\t\t ==============================+==============================\n\n");
-    printf("\t\t\t\t [1] - Area of Triangle                                     \n\n");
-    printf("\t\t\t\t [2] - Area of Square                                       \n\n");
-    printf("\t\t\t\t [3] - Area of Trapezoid                                    \n\n");
-    printf("\t\t\t\t [4] - Area of Parallelogram                                \n\n");
-    printf("\t\t\t\t [5] - Back                                                 \n\n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                         AREA OF SHAPE                         \n");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t\t [1] - Area of Triangle                                     \n\n");
+    printf("\t\t\t [2] - Area of Square                                       \n\n");
+    printf("\t\t\t [3] - Area of Trapezoid                                    \n\n");
+    printf("\t\t\t [4] - Area of Parallelogram                                \n\n");
+    printf("\t\t\t [5] - Back                                                 \n\n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t Pick a Number : ");
+    printf("\t\t Pick a Number : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -662,7 +665,7 @@ void areaTri(void)
 {
     float b, h, area;
 
-    printf("\n\n\t\t Given Value of Triangle\n\n");
+    printf("\n\n\n\t\t Given Value of Triangle\n\n");
 
 // For Base
     printf("\t\t Enter the Base of Triangle : ");
@@ -677,23 +680,21 @@ void areaTri(void)
     area = (b*h)/2;
 
     // Answer/Equal/Total
-    printf("\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                          AREA OF TRIANGLE                        \n");
-    printf("\t\t\t ==============================+==============================  \n\n");
-    printf("\t\t\t\t\t\t              ---          \n");
-    printf("\t\t\t\t\t\t       ^       |           \n");
-    printf("\t\t\t\t\t\t      / \\      |          \n");
-    printf("\t\t\t\t\t\t     /   \\     | h = %g\n", h);
-    printf("\t\t\t\t\t\t    /     \\    |          \n");
-    printf("\t\t\t\t\t\t   /_______\\   |          \n");
-    printf("\t\t\t\t\t\t              ---          \n");
-    printf("\t\t\t\t\t\t  |----------|             \n");
-    printf("\t\t\t\t\t\t     b = %g           \n", b);
-    printf("\t\t\t\t Therefore the Total Area of a Triangle is %g. \n", area);
-    printf("\t\t\t ==============================+==============================  \n\n");
-
-
-    printf("\t\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                          AREA OF TRIANGLE                        \n");
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t\t\t\t              ---          \n");
+    printf("\t\t\t\t\t       ^       |           \n");
+    printf("\t\t\t\t\t      / \\      |          \n");
+    printf("\t\t\t\t\t     /   \\     | h = %g\n", h);
+    printf("\t\t\t\t\t    /     \\    |          \n");
+    printf("\t\t\t\t\t   /_______\\   |          \n");
+    printf("\t\t\t\t\t              ---          \n");
+    printf("\t\t\t\t\t  |----------|             \n");
+    printf("\t\t\t\t\t     b = %g           \n", b);
+    printf("\t\t\t Therefore the Total Area of a Triangle is %g. \n", area);
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -721,7 +722,7 @@ void areaSqr(void)
 {
     float area,side;
 
-    printf("\n\n\t\t Given Value of Square\n\n");
+    printf("\n\n\n\t\t Given Value of Square\n\n");
 
     printf("\t\t Enter sides of square: ");
     scanf("%f", &side);
@@ -730,22 +731,21 @@ void areaSqr(void)
 
     area = side * side;
 
-    printf("\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                           AREA OF SQUARE                         \n");
-    printf("\t\t\t ==============================+==============================  \n\n");
-    printf("\t\t\t\t\t\t    __________  ---             \n");
-    printf("\t\t\t\t\t\t   |          |  |             \n");
-    printf("\t\t\t\t\t\t   |          |  |             \n");
-    printf("\t\t\t\t\t\t   |          |  | s = %g   \n", side);
-    printf("\t\t\t\t\t\t   |          |  |             \n");
-    printf("\t\t\t\t\t\t   |__________|  |             \n");
-    printf("\t\t\t\t\t\t                ---            \n");
-    printf("\t\t\t\t\t\t  |------------|               \n");
-    printf("\t\t\t\t\t\t      s = %g            \n", side);
-    printf("\t\t\t\t Therefore the Total Area of a Square is %g. \n", area);
-    printf("\t\t\t ==============================+==============================  \n\n");
-
-    printf("\t\t\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                           AREA OF SQUARE                         \n");
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t\t\t\t    __________  ---             \n");
+    printf("\t\t\t\t\t   |          |  |             \n");
+    printf("\t\t\t\t\t   |          |  |             \n");
+    printf("\t\t\t\t\t   |          |  | s = %g   \n", side);
+    printf("\t\t\t\t\t   |          |  |             \n");
+    printf("\t\t\t\t\t   |__________|  |             \n");
+    printf("\t\t\t\t\t                ---            \n");
+    printf("\t\t\t\t\t  |------------|               \n");
+    printf("\t\t\t\t\t      s = %g            \n", side);
+    printf("\t\t\t Therefore the Total Area of a Square is %g. \n", area);
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -772,7 +772,7 @@ void areaTrape(void)
 {
     float a, b, h, area;
 
-    printf("\n\n\t\t Given Value of Trapezoid\n\n");
+    printf("\n\n\n\t\t Given Value of Trapezoid\n\n");
 
     printf("\t\t Enter the first value of the Base : ");
     scanf("%f", &a);
@@ -787,25 +787,23 @@ void areaTrape(void)
 
     area = 0.5 * (a + b) * h;
 
-    printf("\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                          AREA OF TRAPEZOID                       \n");
-    printf("\t\t\t ==============================+==============================  \n\n");
-    printf("\t\t\t\t\t           a = %g                 \n", a);
-    printf("\t\t\t\t\t       |-----------|                 \n");
-    printf("\t\t\t\t\t        ___________      ---         \n");
-    printf("\t\t\t\t\t       /           \\      |         \n");
-    printf("\t\t\t\t\t      /             \\     |         \n");
-    printf("\t\t\t\t\t     /               \\    |h = %g\n", h);
-    printf("\t\t\t\t\t    /                 \\   |         \n");
-    printf("\t\t\t\t\t   /___________________\\  |         \n");
-    printf("\t\t\t\t\t                         ---         \n");
-    printf("\t\t\t\t\t  |---------------------|                \n");
-    printf("\t\t\t\t\t           b = %g                \n", b);
-    printf("\t\t\t\t Therefore the Total Area of a Trapezoid is %g. \n", area);
-    printf("\t\t\t ==============================+==============================  \n\n");
-
-
-    printf("\t\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                          AREA OF TRAPEZOID                       \n");
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t\t\t           a = %g                 \n", a);
+    printf("\t\t\t\t       |-----------|                 \n");
+    printf("\t\t\t\t        ___________      ---         \n");
+    printf("\t\t\t\t       /           \\      |         \n");
+    printf("\t\t\t\t      /             \\     |         \n");
+    printf("\t\t\t\t     /               \\    |h = %g\n", h);
+    printf("\t\t\t\t    /                 \\   |         \n");
+    printf("\t\t\t\t   /___________________\\  |         \n");
+    printf("\t\t\t\t                         ---         \n");
+    printf("\t\t\t\t  |---------------------|                \n");
+    printf("\t\t\t\t           b = %g                \n", b);
+    printf("\t\t\t Therefore the Total Area of a Trapezoid is %g. \n", area);
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -825,7 +823,6 @@ void areaTrape(void)
         invalid();
         break;
     }
-
 }
 
 //Code came From  JOSHUA MEREDORES
@@ -833,7 +830,7 @@ void areaPar(void)
 {
     float b, h, area;
 
-    printf("\n\n\t\t Given Value of Parallelogram\n\n");
+    printf("\n\n\n\t\t Given Value of Parallelogram\n\n");
 
     printf("\t\t Enter the Base of Parallelogram : ");
     scanf("%f",&b);
@@ -845,22 +842,21 @@ void areaPar(void)
 
     system("cls");
 
-    printf("\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                        AREA OF PARALLELOGRAM                     \n");
-    printf("\t\t\t ==============================+==============================  \n\n");
-    printf("\t\t\t\t\t        ________________ ---        \n");
-    printf("\t\t\t\t\t       /               /  |         \n");
-    printf("\t\t\t\t\t      /               /   |         \n");
-    printf("\t\t\t\t\t     /               /    |h = %g\n", h);
-    printf("\t\t\t\t\t    /               /     |         \n");
-    printf("\t\t\t\t\t   /_______________/      |         \n");
-    printf("\t\t\t\t\t                         ---        \n");
-    printf("\t\t\t\t\t  |----------------|                \n");
-    printf("\t\t\t\t\t        b = %g                \n", b);
-    printf("\t\t\t\t Therefore the Total Area of a Parallelogram is %g. \n", area);
-    printf("\t\t\t ==============================+==============================  \n\n");
-
-    printf("\t\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                        AREA OF PARALLELOGRAM                     \n");
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t\t\t        ________________ ---        \n");
+    printf("\t\t\t\t       /               /  |         \n");
+    printf("\t\t\t\t      /               /   |         \n");
+    printf("\t\t\t\t     /               /    |h = %g\n", h);
+    printf("\t\t\t\t    /               /     |         \n");
+    printf("\t\t\t\t   /_______________/      |         \n");
+    printf("\t\t\t\t                         ---        \n");
+    printf("\t\t\t\t  |----------------|                \n");
+    printf("\t\t\t\t        b = %g                \n", b);
+    printf("\t\t\t Therefore the Total Area of a Parallelogram is %g. \n", area);
+    printf("\t\t ==============================+==============================  \n\n");
+    printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -885,17 +881,17 @@ void areaPar(void)
 //MENU for Grade Calculation
 void gradeCal(void)
 {
-    printf("\n\n\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                        GRADE CALCULATION                       \n");
-    printf("\t\t\t ==============================+==============================\n\n");
-    printf("\t\t\t\t [1] - Grade Range                                          \n\n");
-    printf("\t\t\t\t [2] - Passes/Failed Identifier                             \n\n");
-    printf("\t\t\t\t [3] - Grade Computation                                    \n\n");
-    printf("\t\t\t\t [4] - Grade Computation 1.1                                \n\n");
-    printf("\t\t\t\t [5] - Back                                                 \n\n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                        GRADE CALCULATION                       \n");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t\t [1] - Grade Range                                          \n\n");
+    printf("\t\t\t [2] - Passes/Failed Identifier                             \n\n");
+    printf("\t\t\t [3] - Grade Computation                                    \n\n");
+    printf("\t\t\t [4] - Grade Computation 1.1                                \n\n");
+    printf("\t\t\t [5] - Back                                                 \n\n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t Pick a Number : ");
+    printf("\t\t Pick a Number : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -937,41 +933,40 @@ void gradeRange(void)
 {
     float grade;
 
-    printf("\n\n\t\t Enter Your Grade : ");
+    printf("\n\n\n\t\t Enter Your Grade : ");
     scanf("%f", &grade);
 
-    printf("\n\n\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                           GRADE RANGE                          \n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                           GRADE RANGE                          \n");
+    printf("\t\t ==============================+==============================\n\n");
 
 
     if(grade >= 90 && grade <= 100)
     {
-        printf("\t\t\t\t\t\t Grade : A\n\n");
+        printf("\t\t\t\t\t Grade : A\n\n");
     }
     else if(grade >= 80 && grade < 90)
     {
-        printf("\t\t\t\t\t\t Grade : B\n\n");
+        printf("\t\t\t\t\t Grade : B\n\n");
     }
     else if(grade >= 70 && grade < 80)
     {
-        printf("\t\t\t\t\t\t Grade : C\n\n");
+        printf("\t\t\t\t\t Grade : C\n\n");
     }
     else if(grade >=60 && grade < 70)
     {
-        printf("\t\t\t\t\t\t Grade : D\n\n");
+        printf("\t\t\t\t\t Grade : D\n\n");
     }
     else if(grade >= 0 && grade < 60)
     {
-        printf("\t\t\t\t\t\t Grade : E\n\n");
+        printf("\t\t\t\t\t Grade : E\n\n");
     }
     else
     {
-        printf("\t\t\t\t\t\t OUT OF RANGE!\n\n");
+        printf("\t\t\t\t\t OUT OF RANGE!\n\n");
     }
-    printf("\t\t\t ==============================+==============================\n\n");
-
-    printf("\t\t BACK press [0]               EXIT press [1] : ");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t         BACK press [0]               EXIT press [1] : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -996,17 +991,17 @@ void gradeRange(void)
 //This code is Group Midter Project
 void growthRate(void)
 {
-    printf("\n\n\n\n\t\t\t ==============================+==============================\n");
-    printf("\t\t\t                     Population Growth Rate                     \n");
-    printf("\t\t\t ==============================+==============================\n\n");
-    printf("\t\t\t\t [1] - Size of Population                                   \n\n");
-    printf("\t\t\t\t [2] - Number of People                                     \n\n");
-    printf("\t\t\t\t [3] - Rate of Growth                                       \n\n");
-    printf("\t\t\t\t [4] - Time                                                 \n\n");
-    printf("\t\t\t\t [5] - Back                                                 \n\n");
-    printf("\t\t\t ==============================+==============================\n\n");
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                     Population Growth Rate                     \n");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t\t [1] - Size of Population                                   \n\n");
+    printf("\t\t\t [2] - Number of People                                     \n\n");
+    printf("\t\t\t [3] - Rate of Growth                                       \n\n");
+    printf("\t\t\t [4] - Time                                                 \n\n");
+    printf("\t\t\t [5] - Back                                                 \n\n");
+    printf("\t\t ==============================+==============================\n\n");
 
-    printf("\t\t\t What did you Want to find? pick a No. : ");
+    printf("\t\t What did you Want to find? pick a No. : ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -1046,7 +1041,7 @@ void growthRate(void)
 void sizePopulation(void)
 {
 
-    printf("\t\t Initial Number of People : ");
+    printf("\n\n\n\t\t Initial Number of People : ");
     scanf("%f", &P);
 
     printf("\t\t Enter the Rate of Growth : ");
@@ -1060,7 +1055,7 @@ void sizePopulation(void)
     ans = P * pow(e,(r * t));
 
 
-    printf("\n\n\t\t =======================================================================================\n");
+    printf("\n\n\n\t\t =======================================================================================\n");
     printf("\t\t                                 Population after in grows                              \n");
     printf("\t\t =======================================================================================\n");
     printf("\t\t             Given :                                                                    \n");
@@ -1073,8 +1068,7 @@ void sizePopulation(void)
     printf("\t\t                 A = %.0f therefore, the City population would be about            \n", ans);
     printf("\t\t                                 %.0f after %.1f Years.                           \n", ans, t);
     printf("\t\t =======================================================================================\n");
-
-    printf("\n\t\t                    BACK press [0]               EXIT press [1] : ");
+    printf("\t\t                     BACK press [0]               EXIT press [1] :                      ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -1099,7 +1093,7 @@ void sizePopulation(void)
 void numPeople(void)
 {
 
-    printf("\t\t Size of the Population after in grows : ");
+    printf("\n\n\n\t\t Size of the Population after in grows : ");
     scanf("%f", &A);
 
     printf("\t\t Enter the Rate of Growth : ");
@@ -1112,7 +1106,7 @@ void numPeople(void)
 
     ans = A / pow(e,(r * t));
 
-    printf("\n\n\t\t =======================================================================================\n");
+    printf("\n\n\n\t\t =======================================================================================\n");
     printf("\t\t                                 Initial Number of People                               \n");
     printf("\t\t =======================================================================================\n");
     printf("\t\t             Given :                                                                    \n");
@@ -1125,8 +1119,7 @@ void numPeople(void)
     printf("\t\t                P = %.0f therefore, the initial number of Population would be     \n", ans);
     printf("\t\t                                   %.0f in %.1f Years.                         \n", ans, t);
     printf("\t\t=======================================================================================\n");
-
-    printf("\n\t\t                    BACK press [0]               EXIT press [1] : ");
+    printf("\t\t                     BACK press [0]               EXIT press [1] :                     ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -1150,7 +1143,7 @@ void numPeople(void)
 
 void rateOfGrowth(void)
 {
-    printf("\t\t Size of the Population after in grows : ");
+    printf("\n\n\n\t\t Size of the Population after in grows : ");
     scanf("%f", &A);
 
     printf("\t\t Initial Number of People : ");
@@ -1163,7 +1156,7 @@ void rateOfGrowth(void)
 
     ans = log10(A / P) / ( t * log10(e));
 
-    printf("\n\n\t\t =======================================================================================\n");
+    printf("\n\n\n\t\t =======================================================================================\n");
     printf("\t\t                                     Rate of Growth                                     \n");
     printf("\t\t =======================================================================================\n");
     printf("\t\t             Given :                                                                    \n");
@@ -1176,8 +1169,7 @@ void rateOfGrowth(void)
     printf("\t\t                 r = %.3f therefore, the rate of growth of the Population would be \n", ans);
     printf("\t\t                                        %.3f in the %.1f Years.                 \n", ans, t);
     printf("\t\t =======================================================================================\n");
-
-    printf("\n\t\t                    BACK press [0]               EXIT press [1] : ");
+    printf("\t\t                     BACK press [0]               EXIT press [1] :                      ");
     scanf("%i", &opt);
 
     switch(opt)
@@ -1201,7 +1193,7 @@ void rateOfGrowth(void)
 
 void timeRate(void)
 {
-    printf("\t\t Size of the Population after in grows : ");
+    printf("\n\n\n\t\t Size of the Population after in grows : ");
     scanf("%f", &A);
 
     printf("\t\t Initial Number of People : ");
@@ -1214,7 +1206,7 @@ void timeRate(void)
 
     ans = log10(A / P) / (r * log10(e));
 
-    printf("\n\n\t\t =======================================================================================\n");
+    printf("\n\n\n\t\t =======================================================================================\n");
     printf("\t\t                                        Time                                            \n");
     printf("\t\t =======================================================================================\n");
     printf("\t\t             Given :                                                                    \n");
@@ -1227,10 +1219,8 @@ void timeRate(void)
     printf("\t\t                 t = %.1f therefore, in the %.1f Years the size of Population was %g \n", ans, ans, A);
     printf("\t\t                                                                                        \n");
     printf("\t\t =======================================================================================\n");
-
-    printf("\n\t\t                    BACK press [0]               EXIT press [1] : ");
+    printf("\t\t                     BACK press [0]               EXIT press [1] :                      ");
     scanf("%i", &opt);
-
 
     switch(opt)
     {
@@ -1256,8 +1246,8 @@ void bitwise(void)
 {
     int x, y;
 
-    printf("\n\t\t * BITWISE * \n");
-    printf("\n\n\t\t First Number  : ");
+    printf("\n\n\n\t\t * BITWISE * \n\n");
+    printf("\t\t First Number  : ");
     scanf("%d",&x);
 
     printf("\t\t Second Number : ");
@@ -1445,6 +1435,137 @@ void fahCon(void)
         break;
     }
 }
+    //INTEGERS IDENTIFIERS
+
+    void intId(void){
+    printf("\n\n\n\t\t ==============================+==============================\n");
+    printf("\t\t                       INTEGERS IDENTIFIER                      \n");
+    printf("\t\t ==============================+==============================\n\n");
+    printf("\t\t\t [1] - Positive and Negative                                \n\n");
+    printf("\t\t\t [2] - Integers Comparison                                  \n\n");
+    printf("\t\t\t [3] - Back                                                 \n\n");
+    printf("\t\t ==============================+==============================\n\n");
+
+    printf("\t\t Pick a Number : ");
+    scanf("%i", &opt);
+
+    switch(opt)
+    {
+    // Positive and Negative
+    case 1:
+        system("cls");
+        posNeg();
+        break;
+
+    // Integers Comparison
+    case 2:
+        system("cls");
+        intCom();
+        break;
+
+    case 3:
+        system("cls");
+        mainMenu();
+        break;
+
+    default:
+        system("cls");
+        invalid();
+        break;
+    }
+}
+
+//posNeg
+void posNeg(void){
+    int a;
+    printf("\n\t\t+---------------+---------------+ \n");
+    printf("\t\t|     Positive and Negative     |");
+    printf("\n\t\t+---------------+---------------+ \n\n");
+    printf("\t\tEnter Number : ");
+    scanf("%i", &a);
+
+    if(a == 0){
+        printf("\n\t\t<----------|---------->\n");
+        printf("\t\t           0");
+        printf("\n\n\t\tThe %i is Positive Number. \n", a);
+    }
+    else if(a >= 1){
+        printf("\n\t\t|----------|---------->\n");
+        printf("\t\t           %i", a);
+        printf("\n\n\t\tThe %i is Positive Number. \n", a);
+    }
+    else{
+        printf("\n\t\t<----------|----------|\n");
+        printf("\t\t          %i", a);
+        printf("\n\n\t\tThe %i is Negative Number. \n", a);
+    }
+
+    printf("\n\t\t BACK press [0]               EXIT press [1] : ");
+    scanf("%i", &opt);
+    switch(opt)
+    {
+    case 0:
+        system("cls");
+        posNeg();
+        break;
+
+    case 1:
+        system("cls");
+        greet();
+        break;
+
+    default:
+        system("cls");
+        invalid();
+        break;
+    }
+}
+
+//intCom
+void intCom(void){
+    int b, a;
+    printf("\n\t\t+----------------+----------------+ \n");
+    printf("\t\t|       Integers Comparison       |");
+    printf("\n\t\t+----------------+----------------+ \n\n");
+    printf("\n\t\tValue of A: ");
+    scanf("%i", &a);
+    printf("\t\tValue of B: ");
+    scanf("%i", &b);
+
+    printf("\t\t===================================\n\n");
+
+    if(a > b){
+        printf("\t\tThe Highest Value is A with value of %i \n", a);
+    }
+    else if(a < b){
+        printf("\t\tThe Highest Value is B with value of %i \n", b);
+    }
+    else if(a == b){
+        printf("\t\tThe Value of A and B is the same, and the value of it is \"%i\"\n", a);
+    }
+
+    printf("\n\t\t BACK press [0]               EXIT press [1] : ");
+    scanf("%i", &opt);
+
+    switch(opt)
+    {
+    case 0:
+        system("cls");
+        intCom();
+        break;
+
+    case 1:
+        system("cls");
+        greet();
+        break;
+
+    default:
+        system("cls");
+        invalid();
+        break;
+    }
+}
+
 
 void greet(void)
 {
@@ -1477,4 +1598,3 @@ void invalid(void)
     printf("\t\t\t                               |                        \n\n");
     printf("\t\t\t ==============================+==============================\n\n");
 }
-
